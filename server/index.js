@@ -7,7 +7,7 @@ connectToMongod();
 
 const app = express();
 app.use(express.json())
-const port = 8080;
+const port = 8080 || process.env.PORT;
 app.use(cors())
 
 app.get('/',(req, res)=>{
