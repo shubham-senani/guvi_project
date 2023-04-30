@@ -13,7 +13,7 @@ function SignUp() {
             alert("password doesn't matched")
         }else
         {
-            const response = await fetch("http://localhost:8080/api/auth/createuser", {
+            const response = await fetch("https://guvi-project.onrender.com/api/auth/createuser", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

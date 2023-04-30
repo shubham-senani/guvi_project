@@ -10,7 +10,7 @@ const Edit = () => {
     }, [])
     //get all Data
     const Data = async () => {
-        const response = await fetch('http://localhost:8080/api/auth/getuser', {
+        const response = await fetch('https://guvi-project.onrender.com/api/auth/getuser', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -28,7 +28,7 @@ const Edit = () => {
         e.preventDefault();
         let { name, email, age, gender, location, phone } = updatedData;
         try {
-            const response = await fetch(`http://localhost:8080/api/auth/update/${data._id}`, {
+            const response = await fetch(`https://guvi-project.onrender.com/api/auth/update/${data._id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',

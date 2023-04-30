@@ -11,7 +11,7 @@ const Profile = () => {
     }, [])
     //get all Data
     const Data = async () => {
-        const response = await fetch('http://localhost:8080/api/auth/getuser', {
+        const response = await fetch('https://guvi-project.onrender.com/api/auth/getuser', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
